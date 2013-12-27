@@ -3,23 +3,23 @@
 - **v0.4.0**
   Breaking Changes:
     Made interpolation #{} escaped by default. Use !{} for unsafe interpolation.
-    
+
   New Features:
     * Optionally exclude `html_escape` function definition from every template -- provide your own escape function invocation string ("MyApp.htmlEscape") and it will be used instead, dramatically shrinking template sizes.
     * Optionally escape all output of `=` by default.  Set the escapeHtmlByDefault configuration variable.
     * New never-escaped `!=` recommended for when you **want** to output strings that contain html.
     * More test coverage for interpolation and escaping
-  
+
   Bugfix: "inside" whitespace was not concatenating properly in some cases.
-  
+
 - **v0.3.0**
-  New features: 
-    * Comments -- Haml comments, HTML comments, JavaScript Comments 
-    * Raw JS -- this lets you use if/else, switch, try/catch, et cetera 
-  in your views (use cautiously!) 
-    * Whitespace insertion -- Now, you can insert whitespace in and/or 
-  around tags using < and >.  Check the docs. 
-    * Blank templates are now valid! 
+  New features:
+    * Comments -- Haml comments, HTML comments, JavaScript Comments
+    * Raw JS -- this lets you use if/else, switch, try/catch, et cetera
+  in your views (use cautiously!)
+    * Whitespace insertion -- Now, you can insert whitespace in and/or
+  around tags using < and >.  Check the docs.
+    * Blank templates are now valid!
     * More test coverage
 
 - **v0.2.5** - *2010-05-06* - NPM support
@@ -45,9 +45,9 @@
 - **v0.2.0** - *2010-03-31* - Function based API, Safe whitespace, Code interpolation.
 
   At the request of some users, I've removed the new insertion into the generated html.  This means that most html will be on one long line, but as an added advantage you won't have that extra whitespace next to your anchor labels messing up your visual display.
-  
+
   Also I added string interpolation to every place I could fit it.  This means you can do crazy stuff like interpolate within strings in attributes, in the body on plain text sections, and of course in javascript and css plugin blocks.
-  
+
   In order to tame the API, I deprecated the four old interfaces `compile`, `optimize`, `execute` and `render`.  The new API is that the Haml/exports object itself is now a function that takes in haml text and outputs a compiled, optimized, ready to execute function.
 
 - **0.1.2** - *2010-02-03* - Bug fixes, plugin aliases, CommonJS, and more...

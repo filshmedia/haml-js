@@ -3,7 +3,8 @@
   "version": "0.2.5",
   "homepage": "https://github.com/filshmedia/haml-js",
   "authors": [
-    "Tim Caswell <tim@creationix.com>"
+    "Tim Caswell <tim@creationix.com>",
+    "Sascha Gehlich <sascha@gehlich.us>"
   ],
   "description": "Haml ported to server-side Javascript",
   "main": "lib/haml.js",
