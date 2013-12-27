@@ -1,0 +1,23 @@
+{
+  "name": "haml-js",
+  "version": "0.2.5",
+  "homepage": "https://github.com/filshmedia/haml-js",
+  "authors": [
+    "Tim Caswell <tim@creationix.com>"
+  ],
+  "description": "Haml ported to server-side Javascript",
+  "main": "lib/haml.js",
+  "keywords": [
+    "haml",
+    "template",
+    "html"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
